@@ -1,0 +1,122 @@
+{
+  "team": "ror-busters",
+  "targets": {
+    "rorgt_t01": {
+      "file": "rorgt_t01.cif",
+      "from_sample": "8",
+      "state_call": "agonist",
+      "pose_implies": "agonist",
+      "h12_contacts": "1",
+      "ligand": "LIG0",
+      "n_ligands": "1",
+      "frame_offset": "259",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.7537528582536167); closest to the ensemble median H12"
+    },
+    "rorgt_t02": {
+      "file": "rorgt_t02.cif",
+      "from_sample": "2",
+      "state_call": "antagonist",
+      "pose_implies": "antagonist",
+      "h12_contacts": "12",
+      "ligand": "LIG1",
+      "n_ligands": "2",
+      "frame_offset": "244",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.7693379609846371); closest to the ensemble median H12"
+    },
+    "rorgt_t03": {
+      "file": "rorgt_t03.cif",
+      "from_sample": "9",
+      "state_call": "agonist",
+      "pose_implies": "agonist",
+      "h12_contacts": "0",
+      "ligand": "LIG0",
+      "n_ligands": "1",
+      "frame_offset": "242",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.734096456030044); closest to the ensemble median H12"
+    },
+    "rorgt_t04": {
+      "file": "rorgt_t04.cif",
+      "from_sample": "8",
+      "state_call": "agonist",
+      "pose_implies": "agonist",
+      "h12_contacts": "1",
+      "ligand": "LIG0",
+      "n_ligands": "1",
+      "frame_offset": "260",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.773233284040139); closest to the ensemble median H12"
+    },
+    "rorgt_t05": {
+      "file": "rorgt_t05.cif",
+      "from_sample": "1",
+      "state_call": "agonist",
+      "pose_implies": "agonist",
+      "h12_contacts": "1",
+      "ligand": "LIG0",
+      "n_ligands": "1",
+      "frame_offset": "245",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.713831721957367); closest to the ensemble median H12"
+    },
+    "rorgt_t06": {
+      "file": "rorgt_t06.cif",
+      "from_sample": "1",
+      "state_call": "antagonist",
+      "pose_implies": "antagonist",
+      "h12_contacts": "12",
+      "ligand": "LIG1",
+      "n_ligands": "2",
+      "frame_offset": "255",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.7043569352709427); closest to the ensemble median H12"
+    },
+    "rorgt_t07": {
+      "file": "rorgt_t07.cif",
+      "from_sample": "3",
+      "state_call": "antagonist",
+      "pose_implies": "antagonist",
+      "h12_contacts": "12",
+      "ligand": "LIG1",
+      "n_ligands": "2",
+      "frame_offset": "244",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.7810472809635813); closest to the ensemble median H12"
+    },
+    "rorgt_t08": {
+      "file": "rorgt_t08.cif",
+      "from_sample": "9",
+      "state_call": "antagonist",
+      "pose_implies": "antagonist",
+      "h12_contacts": "13",
+      "ligand": "LIG0",
+      "n_ligands": "1",
+      "frame_offset": "260",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.7407689240016818); closest to the ensemble median H12"
+    },
+    "rorgt_t09": {
+      "file": "rorgt_t09.cif",
+      "from_sample": "6",
+      "state_call": "antagonist",
+      "pose_implies": "antagonist",
+      "h12_contacts": "13",
+      "ligand": "LIG1",
+      "n_ligands": "2",
+      "frame_offset": "255",
+      "samples_considered": 10,
+      "reason": "best external geometry (PoseBusters Pass 1.0, No Protein Clash 1.0, Physicality 0.7581026576474206); closest to the ensemble median H12"
+    }
+  },
+  "selection": {
+    "criterion": [
+      "PoseBusters Pass",
+      "Ligand No Protein Clash",
+      "Total Ligand Physicality",
+      "distance to the target's median H12 position"
+    ],
+    "excluded": "the model's own confidence (pLDDT, ipTM) - selects against correct rare conformations, and is circular for a method that touches the latents"
+  }
+}
